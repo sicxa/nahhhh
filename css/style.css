@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#app {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+}
+body {
+    background-color: #555;
+    height: 100vh;
+    background-color:#d3f7ff ;
+}
+#no-code-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    font-weight: bold;
+    color: red;
+    z-index: 9999;
+    text-shadow: 2px 2px black;
+    animation: shake 0.4s ease-in-out 3;
+    display: none;
+}
+@keyframes shake {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    25% { transform: translate(-50%, -50%) rotate(2deg); }
+    50% { transform: translate(-50%, -50%) rotate(-2deg); }
+    75% { transform: translate(-50%, -50%) rotate(1deg); }
+    100% { transform: translate(-50%, -50%) rotate(0deg); }
+}
+.game {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+.control {
+    background-color: #d3f7ff;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
+.btn-control {
+    width: 120px;
+    height: 120px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: #40407a;
+    border: 1rem solid #2c2c54;
+    color: #fff;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.btn-control:active {
+    background-color: #706fd3;
+    border: 1rem solid #474787;
+}
